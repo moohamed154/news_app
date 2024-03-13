@@ -33,12 +33,15 @@ class CategoryView extends StatelessWidget {
           ],
         ),
       ),
-      body: CustomScrollView(
-        slivers: [
-          NewListViewBuilder(
-            category: category ,
-          ),
-        ],
+      body: Padding(
+        padding: const EdgeInsets.symmetric(horizontal: 16),
+        child: CustomScrollView(
+          slivers: [
+            NewListViewBuilder(
+              category: category ,
+            ),
+          ],
+        ),
       ),
     );
   }
